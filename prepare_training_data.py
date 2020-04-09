@@ -1,6 +1,5 @@
 import os
 
-#引入刚刚编写好的源文件
 from detect_face import detect_face
 import cv2
 
@@ -27,7 +26,7 @@ def prepare_training_data():
         cv2.imshow("Training on image...", image)
         cv2.waitKey(100)
 
-        #调用我们先前写的函数
+
         face, rect = detect_face(image)
         if face is not None:
             faces.append(face)

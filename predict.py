@@ -1,6 +1,5 @@
 from detect_face import detect_face
 
-# 这两个文件我们还未编写
 from draw_rectangle import draw_rectangle
 from draw_text import draw_text
 

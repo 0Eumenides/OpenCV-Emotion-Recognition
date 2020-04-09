@@ -1,7 +1,6 @@
 from prepare_training_data import prepare_training_data
 import cv2
 import numpy as np
-#该文件我们稍后编写
 from predict import predict
 
 if __name__ == '__main__':
@@ -24,7 +23,6 @@ if __name__ == '__main__':
     test_img2 = cv2.imread(r"./img_predict/sad1.jpg",0)
 
     # 进行预测
-    # 注意，该函数我们还未编写！！！
     predicted_img1 = predict(test_img1, face_recognizer)
     predicted_img2 = predict(test_img2, face_recognizer)
     print("Prediction complete")
