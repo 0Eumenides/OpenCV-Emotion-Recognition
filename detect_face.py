@@ -6,7 +6,7 @@ def detect_face(img):
     gray = cv2.cvtColor(img, cv2.COLOR_BAYER_BG2GRAY)
 
     #加载OpenCV人脸识别器，注意这里的路径是前面下载识别器时，你保存的位置
-    face_cascade = cv2.CascadeClassifier(r'D:\matlab\matlab\toolbox\vision\visionutilities\classifierdata\cascade\lbp\lbpcascade_frontalface.xml')
+    face_cascade = cv2.CascadeClassifier(r'lbpcascade_frontalface.xml')
 
     #scaleFactor表示每次图像尺寸减小的比例，minNeighbors表示构成检测目标的相邻矩形的最小个数
     #这里选择图像尺寸减小1.2倍。minNeighbors越大，识别出来的人脸越准确，但也极易漏判
